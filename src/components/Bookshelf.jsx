@@ -15,7 +15,7 @@ const Bookshelf = () => {
       }
       const handleSubmit = (event) => {
         event.preventDefault()
-        setBooks({ ...books, newBook})
+        setBooks([ ...books, newBook ])
         setNewBook({ title: '', author: '' })
       }
 
